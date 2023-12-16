@@ -1,0 +1,25 @@
+
+.flex-container{
+    display: flex;
+    /* width: 25%; */
+}
+.card{
+    display: block;
+    background-color: aqua;
+    border: 1px solid black;
+    width:auto;
+    border-radius: 10px;
+    padding: 5px;
+    height: 500px;
+}
+.cardtitle{
+    font-size: xx-large;
+    font-weight: 800;
+}
+.carddes{
+    font-size: x-large;
+}
+.cardimg{
+    width: 200px;
+    height: 200px;
+}

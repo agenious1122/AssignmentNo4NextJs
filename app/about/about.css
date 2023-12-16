@@ -1,0 +1,38 @@
+.flex-container1 {
+    display: flex;
+    flex-direction: row;
+    background-color: DodgerBlue;
+    flex-wrap: wrap;
+    justify-content: center;
+    
+  }
+.flex-container2 {
+    display: flex;
+    flex-direction: row;
+    background-color: DodgerBlue;
+    flex-wrap: wrap;
+
+
+  }
+  
+  .div {
+    background-color: #f1f1f1;
+    /* width: 100px; */
+    margin: 2px;
+    text-align: center;
+    line-height: 75px;
+    font-size: 30px;
+    flex-wrap: wrap;
+    align-self: first baseline;
+
+  }
+  #div1, #div3, #div4, #div6{
+    flex-basis: 20%;
+  }
+  #div2, #div5{
+    flex-basis: 59%;
+  } 
+#div4, #div6{
+    line-height: 200px;
+
+}

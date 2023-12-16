@@ -1,27 +1,61 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+* {
+  /* background-color: rgb(208, 221, 221); */
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+.left {
+  grid-area: left;
+}
+.main {
+  grid-area: main;
+}
+.right {
+  grid-area: right;
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+.grid-container {
+  display: grid;
+  grid-template-areas: "left main main main main right";
+  text-align: center;
+  font-size: 30px;
+  border: 1px solid black;
 }
+.left,
+.main,
+.right {
+  border: 1px solid black;
+  border-radius: 20px;
+  margin: 2px;
+}
+.left{
+    float: left;
+    min-width: 300px;
+}
+.right {
+  float: left;
+  min-width: 300px;
+  display: flex;
+
+}
+.main {
+  text-align: justify;
+}
+.btn{
+  background-color: black;
+  border: 1px solid black;
+  width: 100px;
+  margin: 20px auto;
+  border-radius: 20px;
+  /* margin-left: 20px; */
+  cursor: pointer;
+  color: white;
+  padding: 5px;
+}
+.btndiv{
+  margin: auto;
+  width: auto;
+  display:inline-block;
+}
+
