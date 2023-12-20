@@ -1,9 +1,11 @@
 nav{
-    background-color: aqua;
-    
+    background-color:black;
     display: flex;
-
     align-items: center;
+}
+nav li {
+    list-style: none;
+    color: white;
 }
 ul{
     display: flex;

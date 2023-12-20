@@ -1,9 +1,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-* {
-  /* background-color: rgb(208, 221, 221); */
-}
+
 
 .left {
   grid-area: left;
